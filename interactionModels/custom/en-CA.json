@@ -1,0 +1,1694 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "mohawk fact",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "WhatQuestionIntent",
+          "slots": [
+            {
+              "name": "whatQuestionBody",
+              "type": "WhatQuestionBody"
+            }
+          ],
+          "samples": [
+            "what {whatQuestionBody}"
+          ]
+        },
+        {
+          "name": "WhereQuestionIntent",
+          "slots": [
+            {
+              "name": "whereQuestionBody",
+              "type": "WhereQuestionBody"
+            }
+          ],
+          "samples": [
+            "where {whereQuestionBody}"
+          ]
+        },
+        {
+          "name": "HowQuestionIntent",
+          "slots": [
+            {
+              "name": "howQuestionBody",
+              "type": "HowQuestionBody"
+            }
+          ],
+          "samples": [
+            "How {howQuestionBody}"
+          ]
+        },
+        {
+          "name": "WhenQuestionIntent",
+          "slots": [
+            {
+              "name": "whenQuestionBody",
+              "type": "WhenQuestionBody"
+            }
+          ],
+          "samples": [
+            "When {whenQuestionBody}"
+          ]
+        },
+        {
+          "name": "WhoQuestionIntent",
+          "slots": [
+            {
+              "name": "whoQuestionBody",
+              "type": "WhoQuestionBody"
+            }
+          ],
+          "samples": [
+            "Who {whoQuestionBody}"
+          ]
+        },
+        {
+          "name": "WhyQuestionIntent",
+          "slots": [
+            {
+              "name": "whyQuestionBody",
+              "type": "WhyQuestionBody"
+            }
+          ],
+          "samples": [
+            "Why {whyQuestionBody}"
+          ]
+        },
+        {
+          "name": "ProgramListIntent",
+          "slots": [
+            {
+              "name": "programKeywords",
+              "type": "ProgramKeywords"
+            }
+          ],
+          "samples": [
+            "Does Mohawk have programs related to {programKeywords}",
+            "What {programKeywords} programs do we have",
+            "Do we have {programKeywords} programs",
+            "Does Mohawk have {programKeywords} programs",
+            "How many {programKeywords} programs does mohawk college have"
+          ]
+        },
+        {
+          "name": "ProgramDetailIntent",
+          "slots": [
+            {
+              "name": "programs",
+              "type": "ProgramNames"
+            }
+          ],
+          "samples": [
+            "tell me more about {programs}"
+          ]
+        },
+        {
+          "name": "ProgramOutcomeIntent",
+          "slots": [
+            {
+              "name": "programs",
+              "type": "ProgramNames"
+            }
+          ],
+          "samples": [
+            "How long will I complete the {programs} program",
+            "What will I get after completing the {programs} program"
+          ]
+        },
+        {
+          "name": "ProgramIntakeIntent",
+          "slots": [
+            {
+              "name": "programs",
+              "type": "ProgramNames"
+            }
+          ],
+          "samples": [
+            "When will the {programs} program start"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "BURSARY_WHAT",
+              "name": {
+                "value": "bursaries does Mohawk College offer"
+              }
+            },
+            {
+              "id": "AFTER_COLLEGE",
+              "name": {
+                "value": "can I do after Mohawk College"
+              }
+            },
+            {
+              "id": "SPECIALTY",
+              "name": {
+                "value": "is Mohawk College know for"
+              }
+            },
+            {
+              "id": "MASCOT",
+              "name": {
+                "value": "is Mohawks mascot"
+              }
+            },
+            {
+              "id": "INTRAMURAL_SPORTS",
+              "name": {
+                "value": "intramural sports does Mohawk offer"
+              }
+            },
+            {
+              "id": "SPORTS",
+              "name": {
+                "value": "varsity sports does Mohawk have"
+              }
+            },
+            {
+              "id": "BANK",
+              "name": {
+                "value": "banks does Mohawk College have"
+              }
+            },
+            {
+              "id": "LIBRARY",
+              "name": {
+                "value": "services do the library provide"
+              }
+            },
+            {
+              "id": "RADIO",
+              "name": {
+                "value": "is the mohawk college radio station"
+              }
+            },
+            {
+              "id": "DBARC",
+              "name": {
+                "value": "does DBARC stand for"
+              }
+            },
+            {
+              "id": "GRADES",
+              "name": {
+                "value": "is a passing average at Mohawk College"
+              }
+            },
+            {
+              "id": "CELLAR",
+              "name": {
+                "value": "is the oldest location in mohawk"
+              }
+            },
+            {
+              "id": "HEALTH_CARE",
+              "name": {
+                "value": "services does the Health Care Center provide"
+              }
+            },
+            {
+              "id": "TUITION",
+              "name": {
+                "value": "comes with my tuition"
+              }
+            },
+            {
+              "id": "RESIDENCE_INFO",
+              "name": {
+                "value": "is included in residence"
+              }
+            },
+            {
+              "id": "AMENITIES",
+              "name": {
+                "value": "is around Mohawk"
+              }
+            },
+            {
+              "id": "MOMONEY",
+              "name": {
+                "value": "does mohawk do to help students learn about money"
+              }
+            },
+            {
+              "id": "CAREER_TOOLS",
+              "name": {
+                "value": "mohawk program do I take"
+              }
+            },
+            {
+              "id": "ECO_FRIENDLY",
+              "name": {
+                "value": "does Mohawk do to be eco friendly"
+              }
+            },
+            {
+              "id": "EVENTS",
+              "name": {
+                "value": "events does Mohawk have"
+              }
+            },
+            {
+              "id": "MSA",
+              "name": {
+                "value": "does the MSA stand for "
+              }
+            },
+            {
+              "id": "APS",
+              "name": {
+                "value": "is an apprenticeship"
+              }
+            }
+          ],
+          "name": "WhatQuestionBody"
+        },
+        {
+          "values": [
+            {
+              "id": "AVIATION",
+              "name": {
+                "value": "is Mohawk College’s aviation campus"
+              }
+            },
+            {
+              "id": "PARKING",
+              "name": {
+                "value": "is the parking office"
+              }
+            },
+            {
+              "id": "PROGRAM_SUPPORT",
+              "name": {
+                "value": "do I go if I need support for my Mohawk College program"
+              }
+            },
+            {
+              "id": "PEER_MENTOR",
+              "name": {
+                "value": "do you go to apply to be a peer mentor"
+              }
+            },
+            {
+              "id": "DISCOVERY_CENTER",
+              "name": {
+                "value": "is the discovery center"
+              }
+            },
+            {
+              "id": "PRE_ADMISSIONS_TESTING",
+              "name": {
+                "value": "do you take pre admissions testing"
+              }
+            },
+            {
+              "id": "ACADEMIC",
+              "name": {
+                "value": "can students get academic help"
+              }
+            },
+            {
+              "id": "SECURITY",
+              "name": {
+                "value": "is security located"
+              }
+            },
+            {
+              "id": "PRINT",
+              "name": {
+                "value": "can a student go to print something"
+              }
+            },
+            {
+              "id": "LAPTOP",
+              "name": {
+                "value": "do you go to rent a laptop"
+              }
+            },
+            {
+              "id": "SKILLED_TRADE",
+              "name": {
+                "value": "are the mohawk college skilled trade programs located"
+              }
+            },
+            {
+              "id": "TECH_HELP",
+              "name": {
+                "value": "do you go to get help with thier MyMohawk log-in information"
+              }
+            },
+            {
+              "id": "BOOKS",
+              "name": {
+                "value": "can I buy textbooks"
+              }
+            },
+            {
+              "id": "RESIDENCE",
+              "name": {
+                "value": "is residence located"
+              }
+            },
+            {
+              "id": "ADDRESS",
+              "name": {
+                "value": "is Mohawk College Located"
+              }
+            }
+          ],
+          "name": "WhereQuestionBody"
+        },
+        {
+          "values": [
+            {
+              "id": "CONTACT",
+              "name": {
+                "value": "do I contact Mohawk College",
+                "synonyms": [
+                  "to contact Mohawk College"
+                ]
+              }
+            },
+            {
+              "id": "APS_LENGTH",
+              "name": {
+                "value": "long does it take to complete an apprenticeship"
+              }
+            },
+            {
+              "id": "TRANSFER",
+              "name": {
+                "value": "can I transfer my credits"
+              }
+            },
+            {
+              "id": "MORE_INFO",
+              "name": {
+                "value": "do I find out more information on Mohawk College"
+              }
+            },
+            {
+              "id": "MOHAWK_RANK",
+              "name": {
+                "value": "does Mohawk College rank in Canada"
+              }
+            },
+            {
+              "id": "WORKING_PERCENT",
+              "name": {
+                "value": "many mohawk graduates are working"
+              }
+            },
+            {
+              "id": "HOW_MANY_STUDENTS",
+              "name": {
+                "value": "many student attend mohawk college"
+              }
+            },
+            {
+              "id": "ROOM",
+              "name": {
+                "value": "do I know what room to go to"
+              }
+            },
+            {
+              "id": "GYMS",
+              "name": {
+                "value": "many gyms does the Athletic Center have"
+              }
+            },
+            {
+              "id": "THEATER",
+              "name": {
+                "value": "many seats does the theater have"
+              }
+            },
+            {
+              "id": "BURSARY",
+              "name": {
+                "value": "do I apply for a bursary"
+              }
+            },
+            {
+              "id": "RESIDENCE_TOUR",
+              "name": {
+                "value": "do I get a tour of residence"
+              }
+            },
+            {
+              "id": "APPLICANT",
+              "name": {
+                "value": "do I apply to mohawk"
+              }
+            },
+            {
+              "id": "TOUR",
+              "name": {
+                "value": "do I get a tour of Mohawk"
+              }
+            },
+            {
+              "id": "SURGE",
+              "name": {
+                "value": "do I start my own business"
+              }
+            },
+            {
+              "id": "PROGRAMS",
+              "name": {
+                "value": "many programs does Mohawk have"
+              }
+            },
+            {
+              "id": "CAMPUSES",
+              "name": {
+                "value": "many campuses does Mohawk College have"
+              }
+            }
+          ],
+          "name": "HowQuestionBody"
+        },
+        {
+          "values": [
+            {
+              "id": "CHOOSE_MOHAWK",
+              "name": {
+                "value": "choose Mohawk College"
+              }
+            }
+          ],
+          "name": "WhyQuestionBody"
+        },
+        {
+          "values": [
+            {
+              "id": "OSAP_OPEN",
+              "name": {
+                "value": "does the OSAP application open"
+              }
+            },
+            {
+              "id": "MOHAWK_OPEN",
+              "name": {
+                "value": "did Mohawk College open"
+              }
+            },
+            {
+              "id": "TUITION_DEPOSIT",
+              "name": {
+                "value": "is the tuition deposit due"
+              }
+            },
+            {
+              "id": "DEADLINE",
+              "name": {
+                "value": "is the deadline to apply"
+              }
+            },
+            {
+              "id": "ALS",
+              "name": {
+                "value": "can a student access accessible learning services"
+              }
+            },
+            {
+              "id": "OFFER",
+              "name": {
+                "value": "will I know if I\u0027ve recieved an offer of admission from Mohawk College"
+              }
+            },
+            {
+              "id": "OPEN_HOUSE",
+              "name": {
+                "value": "is the next open house"
+              }
+            }
+          ],
+          "name": "WhenQuestionBody"
+        },
+        {
+          "values": [
+            {
+              "id": "MSA",
+              "name": {
+                "value": "runs the MSA"
+              }
+            }
+          ],
+          "name": "WhoQuestionBody"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Biotechnology"
+              }
+            },
+            {
+              "name": {
+                "value": "Graphic Design"
+              }
+            },
+            {
+              "name": {
+                "value": "Pharmacy"
+              }
+            },
+            {
+              "name": {
+                "value": "Welder",
+                "synonyms": [
+                  "Welding"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Multimedia"
+              }
+            },
+            {
+              "name": {
+                "value": "Tourism"
+              }
+            },
+            {
+              "name": {
+                "value": "Air Conditioning",
+                "synonyms": [
+                  "Air Condition"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Social"
+              }
+            },
+            {
+              "name": {
+                "value": "Public Relations"
+              }
+            },
+            {
+              "name": {
+                "value": "Plumber"
+              }
+            },
+            {
+              "name": {
+                "value": "Paralegal"
+              }
+            },
+            {
+              "name": {
+                "value": "Administration"
+              }
+            },
+            {
+              "name": {
+                "value": "Nursing"
+              }
+            },
+            {
+              "name": {
+                "value": "Medical Radiation"
+              }
+            },
+            {
+              "name": {
+                "value": "Massage"
+              }
+            },
+            {
+              "name": {
+                "value": "Journalism"
+              }
+            },
+            {
+              "name": {
+                "value": "Insurance"
+              }
+            },
+            {
+              "name": {
+                "value": "Fitness"
+              }
+            },
+            {
+              "name": {
+                "value": "Carpenter"
+              }
+            },
+            {
+              "name": {
+                "value": "Electrician"
+              }
+            },
+            {
+              "name": {
+                "value": "Educational",
+                "synonyms": [
+                  "Education"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Plumbing"
+              }
+            },
+            {
+              "name": {
+                "value": "Construction"
+              }
+            },
+            {
+              "name": {
+                "value": "Software"
+              }
+            },
+            {
+              "name": {
+                "value": "Computer"
+              }
+            },
+            {
+              "name": {
+                "value": "Engineering"
+              }
+            },
+            {
+              "name": {
+                "value": "Marketing"
+              }
+            },
+            {
+              "name": {
+                "value": "Financial",
+                "synonyms": [
+                  "Finance",
+                  "Finance"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Accounting"
+              }
+            },
+            {
+              "name": {
+                "value": "Broadcasting"
+              }
+            },
+            {
+              "name": {
+                "value": "Health"
+              }
+            },
+            {
+              "name": {
+                "value": "Virtual Reality"
+              }
+            },
+            {
+              "name": {
+                "value": "Technology"
+              }
+            },
+            {
+              "name": {
+                "value": "Management"
+              }
+            },
+            {
+              "name": {
+                "value": "Art",
+                "synonyms": [
+                  "Arts"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Design"
+              }
+            },
+            {
+              "name": {
+                "value": "Animation"
+              }
+            },
+            {
+              "name": {
+                "value": "Aviation"
+              }
+            },
+            {
+              "name": {
+                "value": "Architectural",
+                "synonyms": [
+                  "architecture"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Music"
+              }
+            },
+            {
+              "name": {
+                "value": "Security"
+              }
+            },
+            {
+              "name": {
+                "value": "Polices"
+              }
+            },
+            {
+              "name": {
+                "value": "Media"
+              }
+            }
+          ],
+          "name": "ProgramKeywords"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Accessible Media Production"
+              }
+            },
+            {
+              "name": {
+                "value": "Advanced Police Studies"
+              }
+            },
+            {
+              "name": {
+                "value": "Advanced Security Management"
+              }
+            },
+            {
+              "name": {
+                "value": "Advertising and Marketing Communications Management"
+              }
+            },
+            {
+              "name": {
+                "value": "Analytics for Business Decision Making"
+              }
+            },
+            {
+              "name": {
+                "value": "Animation three D"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music for Bass"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music for Classical Piano"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music for Classical Strings and Guitar"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music for Classical Voice"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music for Classical Winds and Brass"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music for Contemporary Brass and Winds"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music for Contemporary Guitar"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music for Contemporary Piano"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music for Contemporary Voice"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music for Drums and Percussion"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music for Other"
+              }
+            },
+            {
+              "name": {
+                "value": "Applied Music Preparatory"
+              }
+            },
+            {
+              "name": {
+                "value": "Architectural Technician"
+              }
+            },
+            {
+              "name": {
+                "value": "Architectural Technology"
+              }
+            },
+            {
+              "name": {
+                "value": "Art and Design Foundations"
+              }
+            },
+            {
+              "name": {
+                "value": "Augmented and Virtual Reality Innovation Certificate"
+              }
+            },
+            {
+              "name": {
+                "value": "Autism and Behavioural Science"
+              }
+            },
+            {
+              "name": {
+                "value": "Auto Body and Collision Damage Repairer"
+              }
+            },
+            {
+              "name": {
+                "value": "Automotive Service Educational Program known as A.S.E.P."
+              }
+            },
+            {
+              "name": {
+                "value": "Automotive Service Technician"
+              }
+            },
+            {
+              "name": {
+                "value": "Aviation Technician for Aircraft Maintenance"
+              }
+            },
+            {
+              "name": {
+                "value": "Aviation Technician for Aircraft Structures"
+              }
+            },
+            {
+              "name": {
+                "value": "Aviation Technician for Avionics Maintenance"
+              }
+            },
+            {
+              "name": {
+                "value": "Bachelor of Technology Partnership: Combined Degree Program"
+              }
+            },
+            {
+              "name": {
+                "value": "Bachelor of Technology Partnership: Degree Completion Program"
+              }
+            },
+            {
+              "name": {
+                "value": "Biotechnology Health"
+              }
+            },
+            {
+              "name": {
+                "value": "Biotechnology"
+              }
+            },
+            {
+              "name": {
+                "value": "Biotechnology Advanced"
+              }
+            },
+            {
+              "name": {
+                "value": "Brain Disorders Management"
+              }
+            },
+            {
+              "name": {
+                "value": "Broadcasting Radio"
+              }
+            },
+            {
+              "name": {
+                "value": "Broadcasting   Television and Communications Media"
+              }
+            },
+            {
+              "name": {
+                "value": "Business General"
+              }
+            },
+            {
+              "name": {
+                "value": "Business Accounting"
+              }
+            },
+            {
+              "name": {
+                "value": "Business Financial Services"
+              }
+            },
+            {
+              "name": {
+                "value": "Business Marketing"
+              }
+            },
+            {
+              "name": {
+                "value": "Business Administration"
+              }
+            },
+            {
+              "name": {
+                "value": "Business Administration Accounting"
+              }
+            },
+            {
+              "name": {
+                "value": "Business Administration  Human Resources"
+              }
+            },
+            {
+              "name": {
+                "value": "Business Administration Marketing"
+              }
+            },
+            {
+              "name": {
+                "value": "Business Analysis"
+              }
+            },
+            {
+              "name": {
+                "value": "Business Fundamentals Small Business"
+              }
+            },
+            {
+              "name": {
+                "value": "Canadian Health Care for Foreign Trained Professionals"
+              }
+            },
+            {
+              "name": {
+                "value": "Cardiovascular Technology"
+              }
+            },
+            {
+              "name": {
+                "value": "Career Pathways"
+              }
+            },
+            {
+              "name": {
+                "value": "Chemical Engineering Technology"
+              }
+            },
+            {
+              "name": {
+                "value": "Child and Youth Care"
+              }
+            },
+            {
+              "name": {
+                "value": "Child and Youth Worker"
+              }
+            },
+            {
+              "name": {
+                "value": "Child Development Practitioner"
+              }
+            },
+            {
+              "name": {
+                "value": "Civil Engineering Technician"
+              }
+            },
+            {
+              "name": {
+                "value": "Civil Engineering Technology"
+              }
+            },
+            {
+              "name": {
+                "value": "Civil Engineering Technology Transportation"
+              }
+            },
+            {
+              "name": {
+                "value": "Communications Media Practices"
+              }
+            },
+            {
+              "name": {
+                "value": "Community and Justice Services"
+              }
+            },
+            {
+              "name": {
+                "value": "Community and Social Services Management"
+              }
+            },
+            {
+              "name": {
+                "value": "Community Integration through Co operative Education"
+              }
+            },
+            {
+              "name": {
+                "value": "Community Pharmacy Assistant"
+              }
+            },
+            {
+              "name": {
+                "value": "Computer Engineering Technician"
+              }
+            },
+            {
+              "name": {
+                "value": "Computer Engineering Technician Mechatronic Systems"
+              }
+            },
+            {
+              "name": {
+                "value": "Computer Engineering Technology"
+              }
+            },
+            {
+              "name": {
+                "value": "Computer Engineering Technology Mechatronic Systems"
+              }
+            },
+            {
+              "name": {
+                "value": "Computer Systems Technician Network Systems"
+              }
+            },
+            {
+              "name": {
+                "value": "Computer Systems Technician Software Support"
+              }
+            },
+            {
+              "name": {
+                "value": "Computer Systems Technology Network Engineering and Security Analyst"
+              }
+            },
+            {
+              "name": {
+                "value": "Computer Systems Technology Software Development"
+              }
+            },
+            {
+              "name": {
+                "value": "Concurrent Disorders"
+              }
+            },
+            {
+              "name": {
+                "value": "Construction Engineering Technician"
+              }
+            },
+            {
+              "name": {
+                "value": "Construction Engineering Technician Building Renovation"
+              }
+            },
+            {
+              "name": {
+                "value": "Construction Techniques"
+              }
+            },
+            {
+              "name": {
+                "value": "Construction Techniques  Plumbing"
+              }
+            },
+            {
+              "name": {
+                "value": "Creative Arts Business"
+              }
+            },
+            {
+              "name": {
+                "value": "Cyber Security Analytics"
+              }
+            },
+            {
+              "name": {
+                "value": "Developmental Service Worker"
+              }
+            },
+            {
+              "name": {
+                "value": "Diagnostic Cardiac Sonography"
+              }
+            },
+            {
+              "name": {
+                "value": "Diploma RPN to BScN Degree"
+              }
+            },
+            {
+              "name": {
+                "value": "Early Childhood Education Intensive"
+              }
+            },
+            {
+              "name": {
+                "value": "Early Childhood Education"
+              }
+            },
+            {
+              "name": {
+                "value": "Educational Support Intensive"
+              }
+            },
+            {
+              "name": {
+                "value": "Educational Support"
+              }
+            },
+            {
+              "name": {
+                "value": "Electrical Engineering Technician Power"
+              }
+            },
+            {
+              "name": {
+                "value": "Electrical Engineering Technology"
+              }
+            },
+            {
+              "name": {
+                "value": "Electrician Construction and Maintenance"
+              }
+            },
+            {
+              "name": {
+                "value": "Elevating Devices Mechanic"
+              }
+            },
+            {
+              "name": {
+                "value": "Energy Systems Engineering Technology"
+              }
+            },
+            {
+              "name": {
+                "value": "Environmental Technician"
+              }
+            },
+            {
+              "name": {
+                "value": "Expressive Arts"
+              }
+            },
+            {
+              "name": {
+                "value": "Gas and Oil Burner Technician two"
+              }
+            },
+            {
+              "name": {
+                "value": "General Arts and Science English for Academic Purposes Domestic"
+              }
+            },
+            {
+              "name": {
+                "value": "General Arts and Science English for Academic Purposes International"
+              }
+            },
+            {
+              "name": {
+                "value": "General Arts and Science Certificate College Transfer"
+              }
+            },
+            {
+              "name": {
+                "value": "General Arts and Science Certificate University Transfer"
+              }
+            },
+            {
+              "name": {
+                "value": "General Carpenter"
+              }
+            },
+            {
+              "name": {
+                "value": "General Machinist"
+              }
+            },
+            {
+              "name": {
+                "value": "Global Business Management International Only"
+              }
+            },
+            {
+              "name": {
+                "value": "Global Business Management Family Enterprise International Only"
+              }
+            },
+            {
+              "name": {
+                "value": "Graphic Design"
+              }
+            },
+            {
+              "name": {
+                "value": "Health Wellness and Fitness"
+              }
+            },
+            {
+              "name": {
+                "value": "Heating Refrigeration and Air Conditioning Techniques"
+              }
+            },
+            {
+              "name": {
+                "value": "Horticulture Technician"
+              }
+            },
+            {
+              "name": {
+                "value": "Human Resources Management"
+              }
+            },
+            {
+              "name": {
+                "value": "Human Services Foundation"
+              }
+            },
+            {
+              "name": {
+                "value": "Industrial Electrician"
+              }
+            },
+            {
+              "name": {
+                "value": "Industrial Mechanic Millwright"
+              }
+            },
+            {
+              "name": {
+                "value": "Instrumentation Control and Control Technician"
+              }
+            },
+            {
+              "name": {
+                "value": "Insurance"
+              }
+            },
+            {
+              "name": {
+                "value": "International Business Management"
+              }
+            },
+            {
+              "name": {
+                "value": "Journalism"
+              }
+            },
+            {
+              "name": {
+                "value": "Learning Disabilities Specialist"
+              }
+            },
+            {
+              "name": {
+                "value": "Manufacturing Engineering Technician Automation Industrial Mechanic Millwright"
+              }
+            },
+            {
+              "name": {
+                "value": "Massage Therapy"
+              }
+            },
+            {
+              "name": {
+                "value": "Mechanical Engineering Technology"
+              }
+            },
+            {
+              "name": {
+                "value": "Mechanical Technician Elevating Devices"
+              }
+            },
+            {
+              "name": {
+                "value": "Mechanical Techniques Advanced Manufacturing Operations"
+              }
+            },
+            {
+              "name": {
+                "value": "Mechanical Techniques Cabinetry"
+              }
+            },
+            {
+              "name": {
+                "value": "Mechanical Techniques Electrical Monitoring and Systems"
+              }
+            },
+            {
+              "name": {
+                "value": "Mechanical Techniques Plumbing"
+              }
+            },
+            {
+              "name": {
+                "value": "Mechanical Techniques Welding and Fabrication"
+              }
+            },
+            {
+              "name": {
+                "value": "Medical Radiation Sciences"
+              }
+            },
+            {
+              "name": {
+                "value": "Mental Health and Disability Management"
+              }
+            },
+            {
+              "name": {
+                "value": "Metal Fabricator Fitter"
+              }
+            },
+            {
+              "name": {
+                "value": "Motive Power Fundamentals"
+              }
+            },
+            {
+              "name": {
+                "value": "Motive Power Technician"
+              }
+            },
+            {
+              "name": {
+                "value": "Multimedia Storytelling"
+              }
+            },
+            {
+              "name": {
+                "value": "Nursing B S c N"
+              }
+            },
+            {
+              "name": {
+                "value": "Occupational Therapist Assistant and Physiotherapist Assistant"
+              }
+            },
+            {
+              "name": {
+                "value": "Office Administration Executive"
+              }
+            },
+            {
+              "name": {
+                "value": "Office Administration General"
+              }
+            },
+            {
+              "name": {
+                "value": "Office Administration Health Services"
+              }
+            },
+            {
+              "name": {
+                "value": "Office Administration Legal"
+              }
+            },
+            {
+              "name": {
+                "value": "Paralegal"
+              }
+            },
+            {
+              "name": {
+                "value": "Personal Support Worker"
+              }
+            },
+            {
+              "name": {
+                "value": "Pharmacy Technician"
+              }
+            },
+            {
+              "name": {
+                "value": "Photography Still and Motion"
+              }
+            },
+            {
+              "name": {
+                "value": "Plumber"
+              }
+            },
+            {
+              "name": {
+                "value": "Police Foundations"
+              }
+            },
+            {
+              "name": {
+                "value": "Power Engineering Techniques third Class"
+              }
+            },
+            {
+              "name": {
+                "value": "Power Engineering Techniques"
+              }
+            },
+            {
+              "name": {
+                "value": "Practical Nursing P S W to P N Bridging Stream"
+              }
+            },
+            {
+              "name": {
+                "value": "Practical Nursing"
+              }
+            },
+            {
+              "name": {
+                "value": "Pre Health Sciences Pathway to Advanced Diplomas and Degrees"
+              }
+            },
+            {
+              "name": {
+                "value": "Pre Health Sciences Pathway to Certificates and Diplomas"
+              }
+            },
+            {
+              "name": {
+                "value": "Pre Justice"
+              }
+            },
+            {
+              "name": {
+                "value": "Pre Media and Entertainment"
+              }
+            },
+            {
+              "name": {
+                "value": "Pre Technology"
+              }
+            },
+            {
+              "name": {
+                "value": "Protection Security and Investigation"
+              }
+            },
+            {
+              "name": {
+                "value": "Public Relations"
+              }
+            },
+            {
+              "name": {
+                "value": "Quality Engineering Technician Non Destructive Evaluation"
+              }
+            },
+            {
+              "name": {
+                "value": "Recreation Therapy Intensive"
+              }
+            },
+            {
+              "name": {
+                "value": "Recreation Therapy"
+              }
+            },
+            {
+              "name": {
+                "value": "Refrigeration and Air Conditioning Systems Mechanic"
+              }
+            },
+            {
+              "name": {
+                "value": "Residential Air Conditioning Systems Mechanic"
+              }
+            },
+            {
+              "name": {
+                "value": "Sheet Metal Worker"
+              }
+            },
+            {
+              "name": {
+                "value": "Social Service Worker Intensive"
+              }
+            },
+            {
+              "name": {
+                "value": "Social Service Worker"
+              }
+            },
+            {
+              "name": {
+                "value": "Steamfitter"
+              }
+            },
+            {
+              "name": {
+                "value": "Supply Chain Management"
+              }
+            },
+            {
+              "name": {
+                "value": "Tourism"
+              }
+            },
+            {
+              "name": {
+                "value": "Truck and Coach Technician"
+              }
+            },
+            {
+              "name": {
+                "value": "Urban and Regional Planning Technician Geographic Information Systems"
+              }
+            },
+            {
+              "name": {
+                "value": "Utilities Systems Operator"
+              }
+            },
+            {
+              "name": {
+                "value": "Virtual Reality Multimedia Production"
+              }
+            },
+            {
+              "name": {
+                "value": "Welder"
+              }
+            }
+          ],
+          "name": "ProgramNames"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "ProgramOutcomeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "programs",
+              "type": "ProgramNames",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "ProgramListIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "programKeywords",
+              "type": "ProgramKeywords",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.527869007350.379008222581"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.527869007350.379008222581",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sorry, program not found, please try again."
+          }
+        ]
+      }
+    ]
+  },
+  "version": "14"
+}
