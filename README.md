@@ -1,4 +1,4 @@
-# Mohawk Facts Alexa Skill
+# Alexa Skill - Mohawk Facts
 
 This repo is about an Alexa skill called Mohawk facts. It can answer various questions about Mohawk college.
 
